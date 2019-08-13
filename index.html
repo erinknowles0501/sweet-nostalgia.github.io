@@ -10,21 +10,28 @@ body {
   letter-spacing: 1px;
   color: white;
 }
+  
+#main {
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 1px;
+}
 
 header h1 {
   color: white;
   background: #d7b4db;
   font-family: 'georgia';
-  font-size: 50px;
+  font-size: 40px;
   font-style: italic;
   font-weight: bold;
   position: absolute;
-  top: 50px;
-  left: 20%;
+  top: 20px;
+  right: 10%;
   z-index: 100;
   }
 
-main {
+.content {
   background: #000511;
   padding: 30px;
   width: 50%;
@@ -33,7 +40,7 @@ main {
   left: 10%;
 }
 
-main h1 {
+.content h1 {
   color: #d7b4db;
   margin: 0;
   padding: 0;
@@ -60,20 +67,47 @@ aside a:hover {
   letter-spacing: 3px;
   }
   
+aside a.nav {
+  background: blue;
+  color: white;
+  padding: 3px;
+}
+  
+aside a.nav:hover {
+  color: pink;
+  }
+  
 </style>
 </head>
   
 <body>
   
+  <div id="main"></div>
+  
   <header><h1>sweet-nostalgia</h1></header>
   
-  <main>
+  <section class="content">
     
     <h1>hello and welcome</h1>
     
-    this project is equal parts experiment and nostalgia for early-2000's internet girl culture.
+    welcome to a celebration of early-2000's internet girl culture. I've tried to recreate my experience as accurately as possible,
+    down to the coding techniques i used. An example: &lt;li&gt; links seemed kind of daunting so I just used &lt;a&gt; and &lt;br&gt;.
+    This was years before flex-box but tables were on their way out so there was a lot of absolute positioning using px values. I 
+    remember setting up new 'layouts' with a color scheme, two fonts (no webfonts back then - you had to make do with popular
+    system fonts), nav link styling, regular link styling, and blockquote styling. I don't remember ever using a
+    blockquote but I think I thought it was fancy to have a custom styled blockquote. <br><br>
     
-  </main>
+    i was mostly designing for neopets petpages, which were small pages you could create for your pet, but mostly people used them
+    to show off 'graphic's and layouts they had made, as a 'webbie' or hub for the neopets guild they had joined, or as blogs.
+    As such there were certain limitations imposed by the neopets filter - no scripts, obviously, but also other peculiar
+    limitations that to this day I don't see listed anywhere. There was also a character limit, and so if you'd been running a page
+    for a while and therefore had lots of content on it, the inclination was to simplify the code as much as possible.<br>
+    Petpages themselves were also in short supply, as you were limited to one per pet, and were only allowed four pets. This
+    encouraged one-page designs, often using overflow:hidden on the page, and absolute-positioning sections or pages, navigating by
+    anchor links (this is what I've done here).
+    
+    
+  </section>
   
   <aside>
     links:<br>
