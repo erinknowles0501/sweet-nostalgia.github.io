@@ -9,14 +9,46 @@ body {
   font-family: tahoma;
   letter-spacing: 1px;
   color: white;
+  overflow: hidden;
 }
   
-#main {
+.navanchor {
   position: absolute;
-  top: 0;
   width: 1px;
   height: 1px;
 }
+  
+#home-anchor {
+  top: 0;
+}
+  
+#home {
+  top: 200px;
+  }
+  
+#about-anchor {
+  top: 1000px;
+  }
+  
+#about {  top: 1200px; }
+  
+#blog-anchor {
+  top: 2000px;
+  }
+  
+  #blog {  top: 2200px; }
+  
+#gfx-anchor {
+  top: 3000px;
+  }
+  
+  #gfx { top: 3200px; }
+  
+#tuts-anchor {
+  top: 4000px;
+  }
+  
+  #tuts { top: 4200px; }
 
 header h1 {
   color: white;
@@ -36,7 +68,6 @@ header h1 {
   padding: 30px;
   width: 50%;
   position: absolute;
-  top: 200px;
   left: 10%;
 }
 
@@ -82,11 +113,32 @@ aside a.nav:hover {
   
 <body>
   
-  <div id="main"></div>
+    <aside>
+    
+    nav:<br>
+    <a href="#home" class="nav">home</a>
+    <a href="#about" class="nav">about</a>
+    <a href="#blog" class="nav">blog</a>
+    <a href="#gfx" class="nav">gfx</a>
+    <a href="#tuts" class="nav">tuts</a>
+    <a href="#aff" class="nav">affiliate</a>
+    
+    <br><br>
+    
+    links:<br>
+    <a href="#">tender rose</a><br>
+    <a href="#">vanilla shortcake</a><br>
+    <a href="#">dangpuss</a><br>
+    <a href="#">posy-gfx</a>
+    
+    
+  </aside>
+  
+  <div id="home-anchor" class="nav-anchor"></div>
   
   <header><h1>sweet-nostalgia</h1></header>
   
-  <section class="content">
+  <section class="content" id="home">
     
     <h1>hello and welcome</h1>
     
@@ -109,15 +161,52 @@ aside a.nav:hover {
     
   </section>
   
-  <aside>
-    links:<br>
-    <a href="#">tender rose</a><br>
-    <a href="#">vanilla shortcake</a><br>
-    <a href="#">dangpuss</a><br>
-    <a href="#">posy-gfx</a>
+  <div id="about-anchor" class="nav-anchor"></div>
+  
+  <section class="content" id="about">
+    <h1>about me</h1>
+    i'm a free spirit ~.~.~.~.~
+  </section>
+  
+  
+  
+  <div id="blog-anchor" class="nav-anchor"></div>
+  
+  <section class="content" id="blog">
+    <h1>blog</h1>
     
+    <h3>july 15th</h3>
+    woohoo what a day
     
-  </aside>
+  </section>
+  
+  
+  
+  <div id="gfx-anchor" class="nav-anchor"></div>
+  <section class="content" id="gfx">
+    <h1>graphics</h1>
+    
+    - - coming soon - -
+    
+  </section>
+   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+
   
   
 </body>
